@@ -1,4 +1,5 @@
 const container = document.querySelector("#container");
+const squares = document.querySelectorAll(".column");
 const rows = 16;
 const columns = 16;
 
@@ -9,8 +10,9 @@ for (let i = 0; i < rows; i++) {
         const column = document.createElement("div");
         column.className = "column";
         column.style.border = "2px solid black";
-        column.textContent = `Cell ${i+1}-${j+1}`;
+        column.addEventListener("mouseenter", (e) => e.target.style.backgroundColor = "gray");
         row.appendChild(column);
     };
     container.appendChild(row);
 };
+

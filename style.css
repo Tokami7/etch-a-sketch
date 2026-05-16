@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.row{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.column {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
